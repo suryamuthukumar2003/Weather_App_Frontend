@@ -1,0 +1,11 @@
+<!-- <Fragment>
+    <div className='mt-10'>
+      <h1 className='font-medium text-4xl mb-3'>Model Sample</h1>
+      <div className='flex space-x-10'>
+        <button className='py-2 px-3 bg-blue-700 text-white rounded-xl'>Text Model</button>
+        <button className='py-2 px-3 bg-blue-700 text-white rounded-xl'>Video Model</button>
+        <button className='py-2 px-3 bg-blue-700 text-white rounded-xl'>Form Model</button>
+      </div>
+    </div>
+    <Model/>
+    </Fragment> -->
