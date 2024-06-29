@@ -2,6 +2,8 @@ import { Fragment, createContext, useState } from 'react'
 import Appbar from './components/Appbar'
 import History from './components/History'
 import WeatherCard from './components/WeatherCard';
+import Login from './pages/Login';
+import { Outlet } from 'react-router-dom';
 
 export const ToggleState=createContext();
 
@@ -17,12 +19,9 @@ function App() {
       navWidth,
       setNavWidth
       }}>
-      <div className="bg-gray-100 min-h-screen">
+      <div className=" min-h-screen">
         <Appbar />
-        <div className="md:flex relative">
-          <History />
-          <WeatherCard />
-        </div>
+        <Outlet/>
       </div>
     </ToggleState.Provider>
   )
