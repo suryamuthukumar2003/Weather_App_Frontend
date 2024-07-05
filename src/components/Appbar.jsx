@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import brandlogo from '../assets/brandlogo.png';
 import { ToggleState } from '../App';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ function Appbar() {
   const menuClicked=()=>{
       setToggle((curr)=>!curr);
   }
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (navbarRef.current) {
       const navbarWidth = navbarRef.current.offsetHeight;
       setNavWidth(navbarWidth);

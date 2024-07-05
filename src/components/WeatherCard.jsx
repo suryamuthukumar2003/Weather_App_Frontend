@@ -7,12 +7,12 @@ import { WiDegrees } from "react-icons/wi";
 function WeatherCard() {
   return (
     <div className='absolute top-0 left-0 md:static'>
-        <div className='flex flex-col p-5 border border-blue-700 rounded-md'>
+        <div className='flex flex-col p-5 w-[250px] h-[250px] md:w-[500px]  md:h-[500px] border border-blue-700 rounded-md items-center justify-center'>
           <div>
             <img src="" alt="" />
           </div>
           <div className='flex items-baseline -space-x-1'>
-            <span>20</span><span><WiDegrees/></span><span className='text-xl text-slate-800'>c</span>
+            <span className='text-6xl'>20</span><span className='text-4xl'><WiDegrees/></span><span className='text-5xl text-slate-800'>c</span>
           </div>
           <div className=''>
             <span className='text-2xl font-light'>London</span><span className='text-xl font-medium'>,GB</span>
